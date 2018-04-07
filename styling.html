@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Styling</title>
+    <meta charset="utf-8" />
+
+    <style>
+        .wrapper {
+            border: 15px solid #67c3e9;
+            border-radius: 10px;
+            position: relative;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .borders {
+            border: 10px solid #fff;
+            border-radius: 5px;
+            margin: -5px;
+        }
+
+        .content {
+            border-radius: 3px;
+            background: linear-gradient(#68c3e9, #9bd5d2);
+            padding: 40px;
+        }
+
+        .content_div {
+            width: calc(50% - 22px);
+            display: inline-block;
+            background-color: #fff;
+            margin: 10px;
+            border-radius: 3px;
+            -moz-box-shadow: inset 0 0 10px #9eaab1;
+            -webkit-box-shadow: inset 0 0 10px #9eaab1;
+            box-shadow: inset 0 0 10px #9eaab1;
+            height: 100px;
+        }
+
+        .content_div-text {
+            width: 100%;
+            height: 100%;
+            font-size: 4em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #68c3e9;
+            text-shadow: 0px 2px 2px #9eaab1;
+        }
+
+        .opacity {
+            width: 40%;
+            height: 40%;
+            background-color: rgba(255, 255, 255, 0.1);
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="borders">
+            <div class="content">
+                <div class="content_div">
+                    <div class="content_div-text">
+                        <span class="text">M</span>
+                    </div>
+                </div>
+                <div class="content_div">
+                    <div class="content_div-text">
+                        <span class="text">A</span>
+                    </div>
+                </div>
+                <div class="content_div">
+                    <div class="content_div-text">
+                        <span class="text">Q</span>
+                    </div>
+                </div>
+                <div class="content_div">
+                    <div class="content_div-text">
+                        <span class="text">E</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="opacity"></div>
+    </div>
+</body>
+
+</html>
